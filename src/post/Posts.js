@@ -15,7 +15,7 @@ class Posts extends Component {
     loadPosts = page => {
         list(page).then(data => {
             if (data.error) {
-              console.log(error);
+              console.log(data.error);
             } else {
               return this.setState({ posts: data });
             }
