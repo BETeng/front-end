@@ -18,8 +18,8 @@ class Posts extends Component {
               console.log("LOL");
             } //else {
                 //this.setState({ posts: data });
-           // }
-       // });
+            //}
+        });
     };
 
     componentDidMount() {
