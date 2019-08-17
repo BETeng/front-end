@@ -13,14 +13,7 @@ class Posts extends Component {
     }
 
     loadPosts = page => {
-        list(page).then(data => {
-            if (data.err) {
-              console.log(data.err);
-            } else {
-              this.setState({ posts: data });
-            }
-        });
-    };
+        list(page).then(data => {this.setState({ posts: data })}); };
 
     componentDidMount() {
         this.loadPosts(this.state.page);
