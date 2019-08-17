@@ -17,7 +17,7 @@ class Posts extends Component {
             if (data.err) {
               console.log(data.err);
             } else {
-              return this.setState({ posts: data });
+              this.setState({ posts: data });
             }
         });
     };
