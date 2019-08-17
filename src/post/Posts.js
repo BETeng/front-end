@@ -12,15 +12,15 @@ class Posts extends Component {
         };
     }
 
-   // loadPosts = page => {
-       // list(page).then(data => {
+    loadPosts = page => {
+        list(page).then(data => {
             //if (data.error) {
-             //   console.log(data.error);
+                console.log("LOL");
            // } else {
              //   this.setState({ posts: data });
            // }
        // });
-   // };
+    };
 
     componentDidMount() {
         this.loadPosts(this.state.page);
